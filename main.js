@@ -13,7 +13,7 @@
 Method: POST
 */
 
-function post(e) {
+document.getElementById("button").addEventListener("click", () => {
 
 var url = document.getElementById("webhookUrl").value
 var params = { "content": document.getElementById("message").value }
@@ -25,4 +25,4 @@ xhr.setRequestHeader("Content-type", "application/json");
 
 xhr.send(params);
 
-}
+})
